@@ -34,13 +34,17 @@ li {
   list-style-type: none;
 }
 /* ===============logo ends=============== */
-
+/* ==========toggle button============ */
+.toggle-menu {
+  display: none;
+}
 /* =========nav-links============ */
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+/* ===============checkbox adjustement================ */
 
 .nav-menu {
   display: flex;
@@ -221,4 +225,28 @@ footer {
 }
 footer img {
   max-width: 80px;
+}
+
+/* ============ switch platform================= */
+@media (max-width: 850px) {
+  .nav-menu {
+    display: none;
+  }
+  .register {
+    display: none;
+  }
+  .grid-bg {
+    background-image: url(./images/image-hero-mobile.png);
+    height: 50vh;
+    width: 100%;
+  }
+  .grid-container {
+    flex-direction: column;
+  }
+  .grid-content {
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    order: 2;
+  }
 }
