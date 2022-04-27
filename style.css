@@ -8,6 +8,7 @@
 /* =====setting the bg for all web */
 body {
   background: hsl(0, 0%, 93%);
+  font-family: "Epilogue", sans-serif;
 }
 /* ==========roots============ */
 :root {
@@ -61,6 +62,7 @@ li {
 
 /* ===adjusting drop down bg=============== */
 .dropdown {
+  display: none;
   position: absolute;
   padding: 1em 0;
   top: 35px;
@@ -88,6 +90,7 @@ li {
 /* =========== end of dropdown ================= */
 /* =========adjusting dropdown 2 before setting hover effects */
 .dropdown2 {
+  display: none;
   position: absolute;
   padding: 1em 0;
   top: 35px;
@@ -131,3 +134,91 @@ li {
   border-radius: 10px;
 }
 /* ==========end of register================= */
+
+/* ======setting basic hover effect============ */
+.nav-menu a:hover {
+  color: var(--almostblack);
+}
+/* ============= hover effect for register====== */
+.register a:hover {
+  color: var(--almostblack);
+}
+.btn:hover {
+  border: 1px solid var(--almostblack);
+  color: var(--almostblack);
+}
+.features:hover .dropdown {
+  display: block;
+  transition: 1s ease-in-out;
+}
+.features:hover .dropdown2 {
+  display: block;
+}
+mian {
+  display: block;
+}
+main h1 {
+  font-size: 38px;
+  padding-bottom: 10px;
+}
+/* ===============adjusting grid container to flex and then setting the bg with details */
+.grid-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.grid-bg {
+  background-image: url(./images/image-hero-desktop.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  order: 2;
+  width: 40%;
+  height: 500px;
+}
+/* =============adjusting the main text and header========== */
+.grid-content {
+  margin-top: 30px;
+  text-align: left;
+  padding: 70px 20px 0 100px;
+  width: 50%;
+}
+.grid-content h1 {
+  display: block;
+
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.grid-content p {
+  font-size: 16px;
+  color: hsl(0, 0%, 41%);
+  line-height: 23px;
+  padding-bottom: 20px;
+}
+/* ================  adjusting button with hiver effect================*/
+.grid-content button {
+  width: 100px;
+  height: 35px;
+  border-radius: 12px;
+  background-color: black;
+  color: hsl(0, 0%, 98%);
+  border: 0;
+  padding: 10px 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.learn-btn:hover {
+  color: var(--almostblack);
+  background-color: var(--almostwhite);
+  border: 1px solid var(--mediumgray);
+}
+/* =============adjusting footer================== */
+footer {
+  margin-bottom: 150px;
+  padding-top: 40px;
+  text-align: left;
+}
+footer img {
+  max-width: 80px;
+}
