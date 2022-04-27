@@ -7,13 +7,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap");
 /* =====setting the bg for all web */
 body {
-  background: hsl(0, 0%, 95%);
+  background: hsl(0, 0%, 93%);
 }
 /* ==========roots============ */
 :root {
   --almostwhite: hsl(0, 0%, 98%);
   --mediumgray: hsl(0, 0%, 41%);
-  --almostblack: hsl(0, 0, 8%);
+  --almostblack: hsl(0, 0%, 8%);
 }
 li {
   list-style: none;
@@ -29,7 +29,7 @@ li {
 }
 /* ====adjusting logo========= */
 .logo {
-  padding: 10px 50px;
+  padding: 0 30px;
   list-style-type: none;
 }
 /* ===============logo ends=============== */
@@ -46,19 +46,19 @@ li {
 }
 .nav-menu li {
   list-style-type: none;
-  gap: 3em;
 }
 .nav-menu a {
   text-decoration: none;
   text-transform: capitalize;
   font-family: "Epilogue", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   color: var(--mediumgray);
   padding-left: 30px;
 }
 .features {
   position: relative;
 }
+
 /* ===adjusting drop down bg=============== */
 .dropdown {
   position: absolute;
@@ -66,4 +66,68 @@ li {
   top: 35px;
   background-color: var(--almostwhite);
   border-radius: 8px;
+  width: 130px;
+  transform: translateX(-30%);
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* =====spacing items inside each li which contains one img and one text  */
+.dropdown a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon p {
+  font-size: 12px;
+  padding: 10px;
+}
+/* =========== end of dropdown ================= */
+/* =========adjusting dropdown 2 before setting hover effects */
+.dropdown2 {
+  position: absolute;
+  padding: 1em 0;
+  top: 35px;
+  background-color: var(--almostwhite);
+  border-radius: 8px;
+  width: 100px;
+  transform: translateX(20%);
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dropdown2 a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 10px;
+}
+/* ==============end of dropdown2=============== */
+
+/* ===========adjusting button==================== */
+.register {
+  display: flex;
+}
+.register a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 20px;
+  text-transform: capitalize;
+  font-family: "Epilogue", sans-serif;
+  font-size: 12px;
+  color: var(--mediumgray);
+}
+.btn {
+  text-transform: capitalize;
+  font-family: "Epilogue", sans-serif;
+  font-size: 12px;
+  color: var(--mediumgray);
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 1px solid var(--mediumgray);
+  border-radius: 10px;
+}
+/* ==========end of register================= */
